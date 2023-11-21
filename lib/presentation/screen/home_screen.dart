@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
           if (state is PostLoadingState) {
             return const Center(child: CircularProgressIndicator());
           }
-
+          //checktrigger is working
           if (state is PostLoadedState) {
             // log(PostCubit().name);
             return ListView.builder(
