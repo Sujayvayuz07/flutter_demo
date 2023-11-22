@@ -4,6 +4,7 @@ abstract class PostState {}
 
 class PostLoadingState extends PostState {}
 
+//this state for loading and api when loading
 class PostLoadedState extends PostState {
   final List<PostModel> posts;
   PostLoadedState(this.posts);
