@@ -41,8 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SafeArea(
             child:
                 BlocConsumer<PostCubit, PostState>(listener: (context, state) {
-          // PostCubit().name = "Gaurav";
-          // log(PostCubit().name);
           if (state is PostErrorState) {
             SnackBar snackBar = SnackBar(content: Text(state.error));
             ScaffoldMessenger.of(context).showSnackBar(snackBar);
@@ -53,7 +51,6 @@ class _HomeScreenState extends State<HomeScreen> {
           }
           //checktrigger is working
           if (state is PostLoadedState) {
-            // log(PostCubit().name);
             return ListView.builder(
                 itemCount: state.posts.length,
                 itemBuilder: (context, index) {

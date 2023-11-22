@@ -13,6 +13,7 @@ class PostRepository {
       List<dynamic> postMaps = res.data;
       return postMaps.map((e) => PostModel.fromJson(e)).toList();
     } catch (ex) {
+      //for error
       rethrow;
     }
   }
