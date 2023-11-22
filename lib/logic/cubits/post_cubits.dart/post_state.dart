@@ -10,6 +10,7 @@ class PostLoadedState extends PostState {
   PostLoadedState(this.posts);
 }
 
+//this state for show error
 class PostErrorState extends PostState {
   final String error;
   PostErrorState(this.error);
