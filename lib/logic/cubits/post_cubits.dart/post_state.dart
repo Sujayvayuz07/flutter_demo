@@ -2,6 +2,7 @@ import 'package:flutter_application_1/data/model/post_model.dart';
 
 abstract class PostState {}
 
+//this state for show loading
 class PostLoadingState extends PostState {}
 
 //this state for loading and api when loading
